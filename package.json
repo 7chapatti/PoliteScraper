@@ -1,6 +1,14 @@
 {
   "name": "polite-scraper-human",
   "version": "1.0.0",
-  "private": true,
-  "scripts": { "start": "node src/index.js" }
+  "description": "Hand-built polite scraper for Books to Scrape (Stages 0-6)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/parse.test.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "zod": "^3.25.76"
+  }
 }
