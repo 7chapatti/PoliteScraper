@@ -4,7 +4,10 @@ function parsePriceGBP(priceText) {
 }
 
 function normalizeRecord(raw) {
-  return { ...raw, price_gbp: parsePriceGBP(raw.price_text) };
+  return {
+    ...raw,
+    price_gbp: parsePriceGBP(raw.price_text)
+  };
 }
 
 module.exports = { parsePriceGBP, normalizeRecord };
