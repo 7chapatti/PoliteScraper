@@ -9,7 +9,7 @@ const BookRecord = z.object({
   rating_text: z.string().nullable(),
   description: z.string().nullable(),
   source_page: z.string().url(),
-  fetched_at: z.string().datetime()
+  fetched_at: z.string().min(1)
 });
 
 module.exports = { BookRecord };
